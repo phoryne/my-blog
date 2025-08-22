@@ -34,7 +34,7 @@ minima:
   show_excerpts: false
 
   # Date format (default: "%b %d, %Y")
-  date_format: "%b-%d-%Y"
+  # date_format: "%b-%d-%Y"
 
   # Social Media Links
   social_links:
