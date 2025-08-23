@@ -34,7 +34,7 @@ The Azure ecosystem is structured around a set of service families, each address
 
 > An Azure resource is a service unit managed by ARM. In practice, this can be a virtual machine, a storage account, a SQL database, a virtual network, or a Function App. Each resource exists inside a Resource Group, a logical container that simplifies organization, lifecycle management, and governance. For example, you can deploy all the resources related to an application (VM, database, network, monitoring) in a single group, making it possible to administer or delete them all at once.
 
-![image](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/media/overview/consistent-management-layer.png)
+![image](https://res-1.cloudinary.com/nandkishor-yadav/image/upload/q_auto/v1/cloudcoders-images/azure-arm-work-flow.png)
 
 Imagine a company wants to host a web application on a Linux server in the cloud. The first step is to interact with Azure through its control plane. The administrator opens the Azure Portal or uses the Azure CLI to initiate the creation. In both cases, requests are sent to ARM, which coordinates the provisioning of resources. The administrator chooses the region (for example, westeurope), the VM type (size, memory, CPU, optional GPU), and the operating system image (Ubuntu, Windows Server, etc.). Once the parameters are defined, ARM provisions the VM within a Resource Group. This group includes not only the VM but also the associated resources required for its operation, such as a storage account for disks, a virtual network (VNet), and a public IP address for access. All of this is transparently managed but remains visible and administrable by the user.
 
