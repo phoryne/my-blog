@@ -32,3 +32,9 @@ In fact, Azure AI Foundry’s models include more than 11,000 options, giving or
 One of the reasons organizations use Microsoft Azure as their cloud computing solution is that a dedicated team of more than 10,000 security experts continuously monitors systems, detects vulnerabilities, and tracks breach patterns as well as malicious actors. The team synthesizes 78 trillion security signals every day using AI and advanced analytics to understand and defend against cyber threats. Microsoft reinforces this commitment with a planned investment of USD 20 billion in security over the next five years.
 
 Currently, Microsoft Azure offers several types of cloud service models. Notably, they provide IaaS (Infrastructure as a Service), PaaS (Platform as a Service), SaaS (Software as a Service), AIaaS (Artificial Intelligence as a Service), and MaaS (Models as a Service). This offers a comprehensive range of options for all types of organizations.
+
+## Services, Products & Resources
+
+In this section, we will look together at the services Azure offers, the products provided within those services (not all of them, of course), and the key terminologies necessary to understand an Azure architecture. First, it is essential to understand Azure’s overall architecture. This architecture is relatively straightforward. At the top, there is the Azure portal, which is the graphical interface used to manage resources. Beneath it are the services offered by the platform, such as compute, storage, networking, and databases, which we will explore in more detail later. Each service contains different products depending on its category, and from these products, you can deploy and configure resources, such as a virtual machine, an SQL database, or a storage account.
+
+![image](./images/image.png)
