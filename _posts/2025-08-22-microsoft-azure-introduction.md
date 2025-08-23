@@ -40,7 +40,7 @@ In this section, we will look together at the services Azure offers, the product
 
 A service in Azure is a family of capabilities such as Compute, Storage, Networking, or Databases. Each service exposes resource types through what is called a resource provider, for example Microsoft.Compute/virtualMachines or Microsoft.Storage/storageAccounts. A product or SKU is a variant of a resource type with specific features and a specific pricing model. Examples include a virtual machine size like Standard_D2s_v5 or a Load Balancer tier such as Basic versus Standard. Finally, a resource is the actual instance you create in your subscription, for example a VM named myVM01 deployed in France Central. Azure resources are organized in a hierarchy. At the top, you have a Microsoft Entra ID tenant, which is the identity directory. Then come management groups, which are optional and used to organize and apply policies across multiple subscriptions. Subscriptions represent both billing and security boundaries. Within subscriptions, resources are grouped into resource groups, which are logical containers for resources that share the same lifecycle. Finally, you have the resources themselves, which are the deployed instances such as virtual machines, databases, or storage accounts.
 
-Every resource has a unique identifier, and permissions are managed using Role-Based Access Control (RBAC). Access control can be applied at any level in the hierarchy: management group, subscription, resource group, or resource.
+Every resource has a unique identifier, and permissions are managed using Role-Based Access Control (RBAC). Access control can be applied at any level in the hierarchy. Like management group, subscription, resource group, or resource.
 
 ![image](https://media.licdn.com/dms/image/v2/C5612AQHD-YNXVB-oAA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1649432451334?e=2147483647&v=beta&t=xoy_-l28CJwNfg6WER_4Ax_SMBUv-otnu8hTFQXfKXk)
 
@@ -60,7 +60,7 @@ Well, the short answer is, it does a bit of everything. Need storage? Done. Need
 
 Another reason people like it is the way it blends in with the Microsoft stuff most companies are already using. If you’re running Windows Server, Active Directory, or maybe Office 365 at work, Azure doesn’t feel like something totally new, it’s more like an add-on that just clicks into place. And since Microsoft has data centers scattered all over the world, you can put your apps closer to your users, which usually makes them faster and keeps you out of trouble with compliance rules.
 
-And here’s the kicker: you don’t have to go all in from day one. Spin up a small project, test the waters, and scale later if you need to. You only pay for what you actually use, so it’s not a huge risk.
+And here’s the kicker, you don’t have to go all in from day one. Spin up a small project, test the waters, and scale later if you need to. You only pay for what you actually use, so it’s not a huge risk.
 
 ## Conclusion
 
