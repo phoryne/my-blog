@@ -16,4 +16,19 @@ Microsoft Azure, formerly known as Windows Azure, is a cloud computing platform 
 
 ![image](https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fxgz1oxzei8yh5ssqr0f7.jpeg)
 
-What is interesting to know are the figures provided by Microsoft. They actually offer more than 200 products spread across their available services. We will have the opportunity to discuss this later in the article. Moreover, they claim to provide their services to over 95% of the Fortune 500 multinational companies. What Microsoft Azure offers is a solution that enables companies using its various services to migrate from their on-premises infrastructures to fully cloud-based solutions, or to hybrid infrastructures (cloud + on-premises).
+What is interesting to know are the figures provided by Microsoft. They actually offer more than 200 products spread across their available services.
+We will have the opportunity to discuss this later in the article. Below, you can see an overview of the products offered, spread across Microsoft’s broad service categories.
+
+![image](https://pmss.ms/img/azure-1.jpg)
+
+Moreover, they claim to provide their services to over 95% of the Fortune 500 multinational companies. What Microsoft Azure offers is a solution that enables companies using its various services to migrate from their on-premises infrastructures to fully cloud-based solutions, or to hybrid infrastructures (cloud + on-premises).
+
+Speaking of numbers, Microsoft operates more than 400 highly secure data centers across over 70 regions. Thanks to this, Azure provides the broadest cloud footprint, giving businesses more regions to choose from than any other cloud provider. In fact, businesses of all sizes rely on Azure to help them bring their ideas to life, seamlessly unify their technology, and innovate with confidence. One thing that caught my attention and that I find interesting is that Azure offers built-in security solutions designed to protect business workloads, from code to cloud. 
+
+When talking about cloud solutions, one cannot overlook Artificial Intelligence. Azure AI Foundry provides an end-to-end AI platform, encompassing models, tools, security features, and monitoring capabilities to help organizations design and scale their AI applications efficiently and cost-effectively. A global overview of the solution is shown below.
+
+![image](https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2025/03/foundry-stack-wp-2048x1152.png)
+
+In fact, Azure AI Foundry’s models include more than 11,000 options, giving organizations unmatched flexibility to choose and build AI solutions tailored to their needs.
+
+One of the reasons organizations use Microsoft Azure as their cloud computing solution is that a dedicated team of more than 10,000 security experts continuously monitors systems, detects vulnerabilities, and tracks breach patterns as well as malicious actors. The team synthesizes 78 trillion security signals every day using AI and advanced analytics to understand and defend against cyber threats. Microsoft reinforces this commitment with a planned investment of USD 20 billion in security over the next five years.
