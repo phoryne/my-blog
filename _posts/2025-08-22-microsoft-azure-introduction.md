@@ -15,3 +15,7 @@ To fully understand what Microsoft Azure is, and to avoid throwing around terms 
 Concretely, cloud computing service models represent the different ways a cloud provider makes its resources available to users. Each model corresponds to a different level of abstraction and defines how responsibilities are divided between the provider and the client. The three most well-known models are IaaS, PaaS, and SaaS, with more specialized variations such as [FaaS](https://www.ibm.com/think/topics/faas), [CaaS](https://www.ibm.com/think/topics/containers-as-a-service), or [DBaaS](https://www.ibm.com/think/topics/dbaas).
 
 ![image](https://saberda.github.io/2017/09/28/Cloud-Service-Models/1.png)
+
+Indeed, cloud computing service models are organized along a continuum where technical responsibility gradually shifts from the client to the provider. With IaaS, the client retains significant control but also greater responsibility. With PaaS, the focus is mainly on code and data. With SaaS, users consume ready-to-use applications directly. Modern variants such as FaaS or DBaaS push this abstraction even further, allowing companies to concentrate solely on their core business value.
+
+## Writing...
