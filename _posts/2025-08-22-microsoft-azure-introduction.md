@@ -22,6 +22,12 @@ Indeed, cloud computing service models are organized along a continuum where tec
 
 At the very beginning, with its official launch in 2010, Windows Azure (the former name of Microsoft Azure) primarily offered a PaaS (Platform as a Service) model. Microsoft’s initial idea was not to compete directly with AWS on infrastructure (IaaS), but rather to provide an integrated platform for .NET developers. The first available services were therefore focused on developing and hosting applications in the cloud, without customers having to manage virtual machines or operating systems themselves. Among these were Windows Azure Compute (for hosting applications), SQL Azure (a managed relational database), along with storage and messaging services.
 
-> For info, it was only from 2012 onward that Microsoft expanded Azure into an IaaS model, introducing virtual machines and virtual networking to meet market demand and compete more directly with AWS.
+> For info, it was only from 2012 onward that Microsoft expanded Azure into an IaaS model, introducing virtual machines and virtual networking to meet market demand and compete more directly with AWS. Feel free to visit Microsoft’s TechCommunity section, where you can read an [article](https://techcommunity.microsoft.com/blog/educatordeveloperblog/the-history-of-microsoft-azure/3574204) discussing the history of Microsoft Azure.
+
+Today, Azure brings together more than 200 cloud products and services, covering a wide range of needs: machine learning solutions, Internet of Things (IoT) platforms, DevOps tools, advanced security services, relational and NoSQL databases, as well as hybrid and multicloud environments. This diversity allows Azure to serve both startups and large enterprises, offering building blocks tailored to their digital transformation.
+
+Microsoft also highlights the trust that major companies place in Azure: according to the company, 95% of Fortune 500 businesses use the platform for their cloud services. This massive adoption illustrates Azure’s reliability, functional richness, and ability to meet critical challenges, whether in performance, security, or regulatory compliance. By combining a complete ecosystem with large-scale adoption, Azure has established itself as an essential global player in cloud computing.
+
+## Services
 
 ## Writing...
