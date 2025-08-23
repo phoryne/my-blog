@@ -37,4 +37,4 @@ Currently, Microsoft Azure offers several types of cloud service models. Notably
 
 In this section, we will look together at the services Azure offers, the products provided within those services (not all of them, of course), and the key terminologies necessary to understand an Azure architecture. First, it is essential to understand Azure’s overall architecture. This architecture is relatively straightforward. At the top, there is the Azure portal, which is the graphical interface used to manage resources. Beneath it are the services offered by the platform, such as compute, storage, networking, and databases, which we will explore in more detail later. Each service contains different products depending on its category, and from these products, you can deploy and configure resources, such as a virtual machine, an SQL database, or a storage account.
 
-![image](./images/image.png)
+![image](https://ibb.co/vx0dbbrb)
