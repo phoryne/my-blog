@@ -12,4 +12,8 @@ Concretely, Microsoft Azure is a hyperscale public cloud built on a global netwo
 
 > Moreover, it’s important to know that there are several well-known cloud computing platforms provided by equally well-known multinational companies. For example, there’s AWS (Amazon Web Services) from Amazon, and there’s also GCP (Google Cloud Platform), which is Google’s official cloud computing platform.
 
+![image](https://alleo.tech/wp-content/uploads/2019/09/cropped-amazon-aws-microsoft-azure-google-cloud-1.png)
+
+Microsoft Azure has been around since 2010 and offers a wide range of services, with more than 200 products available. According to Microsoft, 95% of Fortune 500 companies rely on Azure for their cloud services. In 2010, they stated that it would be a way to pivot from on-premises datacenters to [cloud computing](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing) solutions (such as Azure). With over 400 highly secure datacenters across more than 70 regions, Azure provides the world’s broadest cloud footprint, offering businesses more regional choices than any other cloud provider. In addition, Azure provides built-in security solutions designed to protect a company’s workloads from code to cloud.
+
 ## Writing...
