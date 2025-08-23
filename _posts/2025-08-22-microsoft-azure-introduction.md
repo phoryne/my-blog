@@ -6,7 +6,11 @@ date: 2025-08-22
 
 ## Introduction
 
-Greetings, in this article we will be talking about Microsoft, the cloud, its services and products, and a general understanding of how Microsoft Azure and its offerings work. This is not a technical article, but rather an informative one about how Microsoft Cloud has evolved over the years and the range of services it provides. And no, this article is not sponsored by Microsoft.
+Greetings, in this article we will be talking about Microsoft, the cloud, its services and products, and a general understanding of how Microsoft Azure and its offerings work. 
+
+![image](https://images.theconversation.com/files/228393/original/file-20180719-142423-4065mr.jpg?ixlib=rb-4.1.0&rect=95%2C0%2C3405%2C1702&q=45&auto=format&w=1356&h=668&fit=crop)
+
+This is not a technical article, but rather an informative one about how Microsoft Cloud has evolved over the years and the range of services it provides. And no, this article is not sponsored by Microsoft.
 
 ### What is Cloud Computing?
 
@@ -36,7 +40,11 @@ Finally, Azure places strong emphasis on security and centralized management. Th
 
 ## Azure Fundamentals
 
-In this section, we will explore the key concepts of Microsoft Azure. We will go over the different terminologies the platform uses for its services, products, security measures, and more.
+In this section, we will introduce the key concepts that form the foundation of Microsoft Azure. These fundamentals are essential to understanding how the platform is structured and how organizations can use it effectively. We will begin with the notion of resources and resource groups, which represent the core building blocks of any deployment. Then, we will look at subscriptions and management groups, which define the administrative and billing framework of Azure.
+
+We will also examine the global infrastructure of Azure through its regions and availability zones, which ensure performance, reliability, and disaster recovery. From there, we will explore the role of Azure Resource Manager (ARM), the central management layer that enables consistency, automation, and infrastructure-as-code. Finally, we will cover identity and access management with Azure Active Directory and Role-Based Access Control (RBAC), two pillars of Azure’s security and governance model.
+
+Together, these concepts provide the necessary foundation for understanding more advanced services and use cases offered by Microsoft Azure.
 
 ### Core Concepts and Terminology
 
@@ -45,5 +53,7 @@ In Azure, the first essential concept is the resource. A resource is an individu
 ![image](https://media.licdn.com/dms/image/v2/D4D12AQHou39PpAbidg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1691663081830?e=2147483647&v=beta&t=0njG1hjcm0mx7f_RdVFH2Uui-oOTMiQk5ZB7L8JMuEA)
 
 Another fundamental concept is Regions and Availability Zones. A region is a specific geographic area (for example, France Central, West Europe, or East US) where Azure operates datacenters. Availability Zones are sets of independent datacenters within a region, designed to ensure high availability and protect against physical failures.The deployment and management of all these resources are handled through Azure Resource Manager (ARM). ARM is the management layer that enables automated deployments, standardized configurations, and consistent resource management. Thanks to ARM, infrastructure-as-code can be implemented via ARM templates, Bicep, or even Terraform. Finally, identity and access management is a central pillar in Azure. This is handled by Azure Active Directory (Azure AD), which manages users, groups, roles, and access to resources. A key concept here is Role-Based Access Control (RBAC), which allows precise permissions (read, write, administer) to be assigned across different scopes: a single resource, a resource group, a subscription, or even a management group.
+
+![image](https://learn.microsoft.com/en-us/azure/reliability/media/regions-availability-zones.png)
 
 ## Writing...
