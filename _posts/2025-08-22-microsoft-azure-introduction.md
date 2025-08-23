@@ -12,6 +12,6 @@ Today, the world of cloud computing has become, or is gradually becoming, indisp
 
 Indeed, paying for expensive solutions that are only moderately used is neither practical nor cost-effective, as it results in wasted money. On the other hand, a pay-as-you-go model significantly reduces costs and keeps them under control. In fact, it helps avoid underutilization (servers running half empty) as well as overcapacity (purchasing hardware in advance).
 
-![image](https://www.pepperdata.com/wp-content/uploads/2025/04/rightsizing-image-cleaned-up-e1747244394533.png)
+![image](https://www.tierpoint.com/wp-content/uploads/2023/05/How-to-Reduce-Your-Cloud-Waste-%E2%80%93-1-1024x626.png)
 
 ## Writing...
