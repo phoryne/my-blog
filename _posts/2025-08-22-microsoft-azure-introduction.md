@@ -28,6 +28,20 @@ Today, Azure brings together more than 200 cloud products and services, covering
 
 Microsoft also highlights the trust that major companies place in Azure: according to the company, 95% of Fortune 500 businesses use the platform for their cloud services. This massive adoption illustrates Azure’s reliability, functional richness, and ability to meet critical challenges, whether in performance, security, or regulatory compliance. By combining a complete ecosystem with large-scale adoption, Azure has established itself as an essential global player in cloud computing.
 
-## Services
+## Services & Resources
+
+The Azure ecosystem is structured around a set of service families, each addressing specific needs of businesses and developers. The first of these is compute, which encompasses computing resources. Azure provides virtual machines (VMs) to host any type of application, Kubernetes clusters and containers for modern, portable workload orchestration, as well as Function Apps that embody the serverless model, allowing code execution on demand without managing the underlying infrastructure. Communication with services always goes through the control plane managed by Azure Resource Manager (ARM). ARM exposes a unified REST API that all services rely on. Whether you interact with Azure from the graphical portal, the command line (Azure CLI or PowerShell), or through an SDK (Python, Java, .NET, etc.), in reality you are making calls to ARM. ARM then takes care of provisioning, configuring, and supervising the requested services across Azure datacenters. This ensures consistency: all Azure services, whether virtual machines, databases, or networks, are managed through this single layer.
+
+> An Azure resource is a service unit managed by ARM. In practice, this can be a virtual machine, a storage account, a SQL database, a virtual network, or a Function App. Each resource exists inside a Resource Group, a logical container that simplifies organization, lifecycle management, and governance. For example, you can deploy all the resources related to an application (VM, database, network, monitoring) in a single group, making it possible to administer or delete them all at once.
+
+![image](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/media/overview/consistent-management-layer.png)
+
+Imagine a company wants to host a web application on a Linux server in the cloud. The first step is to interact with Azure through its control plane. The administrator opens the Azure Portal or uses the Azure CLI to initiate the creation. In both cases, requests are sent to ARM, which coordinates the provisioning of resources. The administrator chooses the region (for example, westeurope), the VM type (size, memory, CPU, optional GPU), and the operating system image (Ubuntu, Windows Server, etc.). Once the parameters are defined, ARM provisions the VM within a Resource Group. This group includes not only the VM but also the associated resources required for its operation, such as a storage account for disks, a virtual network (VNet), and a public IP address for access. All of this is transparently managed but remains visible and administrable by the user.
+
+As soon as the VM is deployed, the company can connect via SSH (Linux) or RDP (Windows) to install its web application. The developers didn’t have to purchase a physical server or configure a datacenter, they simply asked Azure to create the resource, and ARM orchestrated the rest. The advantage is that this VM can be resized on the fly (for example, scaling from 2 to 8 CPUs) or cloned to handle more traffic, without needing a full reinstallation.
+
+Finally, when it is no longer needed, the VM can be deleted with a single click or command, along with all the resources in its group. Billing stops immediately, since in Azure you only pay for what you use. This example perfectly illustrates the logic: a resource (in this case, a VM) is created via ARM, interacts with related resources (network, storage), and goes through a complete lifecycle of provisioning, usage, and deletion, entirely controlled by the client.
+
+![image](https://markswinkels.nl/wp-content/uploads/2016/06/2016-06-30_11h02_44.png)
 
 ## Writing...
