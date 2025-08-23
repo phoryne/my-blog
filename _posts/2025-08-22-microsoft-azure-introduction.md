@@ -14,8 +14,6 @@ Before we begin, I need to give you a quick heads-up. In this article, we’ll o
 
 Microsoft Azure, formerly known as Windows Azure, is a cloud computing platform developed by Microsoft. It was officially announced in October 2008 under the name Windows Azure during the Microsoft Professional Developers Conference (PDC). The platform was later made publicly available in February 2010. In March 2014, Windows Azure was renamed Microsoft Azure, to reflect its broader focus beyond Windows and toward a more comprehensive cloud offering. If you happen to be living in a cave, reading this article on a scrap of paper, without internet access, and without having kidnapped a Microsoft employee to keep you company, the project’s logo looks like a stylized light-blue "A". There are other well-known cloud computing platforms as well. To give you an idea, there’s AWS (Amazon Web Services) from Amazon, GCP (Google Cloud Platform) from Google, and Azure from Microsoft. All three solutions offer more or less the same types of services and work in roughly the same way, the main difference being that they come from three different companies.
 
-![image](https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fxgz1oxzei8yh5ssqr0f7.jpeg)
-
 What is interesting to know are the figures provided by Microsoft. They actually offer more than 200 products spread across their available services.
 We will have the opportunity to discuss this later in the article. Below, you can see an overview of the products offered, spread across Microsoft’s broad service categories.
 
