@@ -20,4 +20,8 @@ Concretely, cloud computing service models represent the different ways a cloud 
 
 Indeed, cloud computing service models are organized along a continuum where technical responsibility gradually shifts from the client to the provider. With IaaS, the client retains significant control but also greater responsibility. With PaaS, the focus is mainly on code and data. With SaaS, users consume ready-to-use applications directly. Modern variants such as FaaS or DBaaS push this abstraction even further, allowing companies to concentrate solely on their core business value.
 
+At the very beginning, with its official launch in 2010, Windows Azure (the former name of Microsoft Azure) primarily offered a PaaS (Platform as a Service) model. Microsoft’s initial idea was not to compete directly with AWS on infrastructure (IaaS), but rather to provide an integrated platform for .NET developers. The first available services were therefore focused on developing and hosting applications in the cloud, without customers having to manage virtual machines or operating systems themselves. Among these were Windows Azure Compute (for hosting applications), SQL Azure (a managed relational database), along with storage and messaging services.
+
+> For info, it was only from 2012 onward that Microsoft expanded Azure into an IaaS model, introducing virtual machines and virtual networking to meet market demand and compete more directly with AWS.
+
 ## Writing...
