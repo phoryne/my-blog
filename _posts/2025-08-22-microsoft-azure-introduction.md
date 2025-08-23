@@ -1,7 +1,7 @@
 ---
-layout: post
-title: "Microsoft Azure: Fundamentals and Core Services (Part 1)"
-date: 2025-08-22
+layout: post  
+title: "Microsoft Azure: Fundamentals and Core Services (Part 1)"  
+date: 2025-08-22  
 ---
 
 ## Introduction
@@ -14,14 +14,13 @@ Before we begin, I need to give you a quick heads-up. In this article, we’ll o
 
 Microsoft Azure, formerly known as Windows Azure, is a cloud computing platform developed by Microsoft. It was officially announced in October 2008 under the name Windows Azure during the Microsoft Professional Developers Conference (PDC). The platform was later made publicly available in February 2010. In March 2014, Windows Azure was renamed Microsoft Azure, to reflect its broader focus beyond Windows and toward a more comprehensive cloud offering. If you happen to be living in a cave, reading this article on a scrap of paper, without internet access, and without having kidnapped a Microsoft employee to keep you company, the project’s logo looks like a stylized light-blue "A". There are other well-known cloud computing platforms as well. To give you an idea, there’s AWS (Amazon Web Services) from Amazon, GCP (Google Cloud Platform) from Google, and Azure from Microsoft. All three solutions offer more or less the same types of services and work in roughly the same way, the main difference being that they come from three different companies.
 
-What is interesting to know are the figures provided by Microsoft. They actually offer more than 200 products spread across their available services.  
-We will have the opportunity to discuss this later in the article. Below, you can see an overview of the products offered, spread across Microsoft’s broad service categories.
+What is interesting to know are the figures provided by Microsoft. They actually offer more than 200 products spread across their available services. We will have the opportunity to discuss this later in the article. Below, you can see an overview of the products offered, spread across Microsoft’s broad service categories.
 
 ![image](https://pmss.ms/img/azure-1.jpg)
 
 Moreover, they claim to provide their services to over 95% of the Fortune 500 multinational companies. What Microsoft Azure offers is a solution that enables companies using its various services to migrate from their on-premises infrastructures to fully cloud-based solutions, or to hybrid infrastructures (cloud + on-premises).
 
-Speaking of numbers, Microsoft operates more than 400 highly secure data centers across over 70 regions. Thanks to this, Azure provides the broadest cloud footprint, giving businesses more regions to choose from than any other cloud provider. In fact, businesses of all sizes rely on Azure to help them bring their ideas to life, seamlessly unify their technology, and innovate with confidence. One thing that caught my attention and that I find interesting is that Azure offers built-in security solutions designed to protect business workloads, from code to cloud. 
+Speaking of numbers, Microsoft operates more than 400 highly secure data centers across over 70 regions. Thanks to this, Azure provides the broadest cloud footprint, giving businesses more regions to choose from than any other cloud provider. In fact, businesses of all sizes rely on Azure to help them bring their ideas to life, seamlessly unify their technology, and innovate with confidence. One thing that caught my attention and that I find interesting is that Azure offers built-in security solutions designed to protect business workloads, from code to cloud.
 
 When talking about cloud solutions, one cannot overlook Artificial Intelligence. Azure AI Foundry provides an end-to-end AI platform, encompassing models, tools, security features, and monitoring capabilities to help organizations design and scale their AI applications efficiently and cost-effectively. A global overview of the solution is shown below.
 
@@ -39,36 +38,26 @@ In this section, we will look together at the services Azure offers, the product
 
 ![image](https://eu-images.contentstack.com/v3/assets/blt07f68461ccd75245/blt631316163dc18945/66180d2ac88264e5cce39ec5/azureresourcesmaphero_0_4.png?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Now, here’s where things get a bit more technical.  
+Now, here’s where things get more technical.
 
-A **service** in Azure is a family of capabilities (e.g., Compute, Storage, Networking, Databases). Each service exposes **resource types** through what is called a **resource provider** (for example: `Microsoft.Compute/virtualMachines`, `Microsoft.Storage/storageAccounts`). A **product** or **SKU** is a variant of a resource type with specific features and a specific pricing model (for instance, a VM size like `Standard_D2s_v5` or a Load Balancer tier such as Basic vs. Standard). Finally, a **resource** is the actual instance you create in your subscription (e.g., a VM named `myVM01` deployed in France Central).
+A service in Azure is a family of capabilities such as Compute, Storage, Networking, or Databases. Each service exposes resource types through what is called a resource provider, for example Microsoft.Compute/virtualMachines or Microsoft.Storage/storageAccounts. A product or SKU is a variant of a resource type with specific features and a specific pricing model. Examples include a virtual machine size like Standard_D2s_v5 or a Load Balancer tier such as Basic versus Standard. Finally, a resource is the actual instance you create in your subscription, for example a VM named myVM01 deployed in France Central.
 
-Azure resources are organized in a hierarchy:  
-- At the top, you have a **Microsoft Entra ID tenant** (identity directory).  
-- Then, **management groups** (optional), used to organize and apply policies across multiple subscriptions.  
-- **Subscriptions**, which are billing and security boundaries.  
-- **Resource groups**, logical containers for resources that share the same lifecycle.  
-- **Resources**, the deployed instances (VMs, databases, storage accounts, etc.).  
+Azure resources are organized in a hierarchy. At the top, you have a Microsoft Entra ID tenant, which is the identity directory. Then come management groups, which are optional and used to organize and apply policies across multiple subscriptions. Subscriptions represent both billing and security boundaries. Within subscriptions, resources are grouped into resource groups, which are logical containers for resources that share the same lifecycle. Finally, you have the resources themselves, which are the deployed instances such as virtual machines, databases, or storage accounts.
 
-Every resource has a unique **resource ID**, and permissions are managed using **RBAC** (Role-Based Access Control) that can be applied at any level (management group, subscription, resource group, resource).
+Every resource has a unique identifier, and permissions are managed using Role-Based Access Control (RBAC). Access control can be applied at any level in the hierarchy: management group, subscription, resource group, or resource.
 
-Azure also operates across **regions** (sets of data centers) and **availability zones** (isolated data centers within a region). Some regions are paired with others to improve disaster recovery. Not all services or SKUs are available in all regions, so when you create a resource, you must check the availability.
+Azure also operates across regions, which are sets of data centers, and availability zones, which are isolated datacenters within a region. Some regions are paired with others to improve disaster recovery. Not all services or SKUs are available in all regions, so when you create a resource, you must check its availability.
 
-On top of this, Azure offers strong **governance tools**:  
-- **Tags** (key-value pairs) to organize resources and track costs.  
-- **Locks** (`CanNotDelete` or `ReadOnly`) to protect critical resources from accidental changes.  
-- **Azure Policy** to enforce compliance (e.g., require encryption, restrict regions, or audit resource configurations).  
-- **Deployment Stacks** (the successor of Blueprints) to manage infrastructure deployments at scale.
+On top of this, Azure offers strong governance tools. Tags allow you to classify and track resources. Locks can protect critical resources from accidental changes or deletion. Azure Policy enforces compliance by requiring certain configurations, restricting allowed regions, or auditing existing deployments. Deployment Stacks, the successor to Blueprints, allow you to manage infrastructure deployments at scale in a more modern way.
 
-For **automation and Infrastructure as Code (IaC)**, Azure uses **Bicep** (a modern declarative language) and ARM templates (JSON). You can deploy in *incremental* mode (recommended, only adds/updates resources) or *complete* mode (which deletes what’s not in the template). Features like **what-if deployments** help preview changes before applying them.
+For automation and Infrastructure as Code, Azure uses Bicep, a modern declarative language, along with ARM templates in JSON. Deployments can be incremental, which only adds or updates resources, or complete, which deletes everything not explicitly defined in the template. Features like what-if analysis help preview changes before they are applied.
 
-On the **identity side**, Azure integrates with Microsoft Entra ID. You can assign roles via RBAC and use **Managed Identities** to let applications access Azure resources securely without storing secrets.
+On the identity side, Azure integrates with Microsoft Entra ID. Roles are assigned via RBAC, and Managed Identities can be used by applications to access resources securely without storing secrets.
 
-From a **billing perspective**, each subscription is linked to a billing account, and every resource consumes **billing meters** (units of usage, e.g., hours, GB). Costs vary by **SKU**, **region**, and consumption. Azure also provides **Reservations** and **Savings Plans**: by committing to a specific service (e.g., VMs, SQL databases, storage) for one or three years, organizations can achieve significant discounts.
+From a billing perspective, each subscription is linked to a billing account, and every resource consumes billing meters, which are units of usage such as hours or gigabytes. Costs vary depending on the chosen SKU, the region, and consumption levels. To optimize costs, Azure offers Reservations and Savings Plans, which allow organizations to commit to a specific service for one or three years in exchange for significant discounts.
 
-Finally, Azure includes the **Marketplace**, which offers third-party and Microsoft-published solutions (VM images, SaaS apps, managed services). Each Marketplace offer has **plans** (similar to SKUs) with different features and prices.
+Finally, Azure includes the Marketplace, which provides both third-party and Microsoft-published solutions. These range from virtual machine images to SaaS applications and managed services. Each Marketplace offer comes with different plans that provide various features and prices.
 
-### A concrete example:
-Let’s say you need a virtual machine. You select the **Compute service**, then choose the **resource type** `virtualMachines` from the provider `Microsoft.Compute`. You pick a **SKU** (say, `Standard_D4s_v5`), deploy it in a **resource group** inside the **France Central region**, and Azure creates a **resource**. That VM consumes billing meters (compute hours, disks, network), can be tagged (`CostCenter=Finance`), secured with RBAC and locks, and monitored through Policy. If you know you’ll use it for the next three years, you could apply a **reservation** to reduce costs.
+To illustrate, imagine you need to deploy a virtual machine. You select the Compute service, then choose the resource type virtualMachines from the provider Microsoft.Compute. You pick a SKU such as Standard_D4s_v5, deploy it in a resource group within the France Central region, and Azure creates the resource. That VM consumes billing meters for compute, disks, and networking. You can tag it with a cost center, protect it with locks, control access with RBAC, enforce compliance with policies, and monitor it through governance tools. If you know you will keep it running for years, you can apply a reservation to reduce costs.
 
-This layered model—**services → SKUs/products → resources → governance & billing**—is the foundation of Azure’s architecture. Once you understand it, everything else (from AI services to networking) falls naturally into place.
+This layered model, which goes from services to products and SKUs, then to resources, governance, and billing, is the foundation of Azure’s architecture. Once you understand this structure, everything else, from artificial intelligence services to networking solutions, becomes much easier to grasp.
