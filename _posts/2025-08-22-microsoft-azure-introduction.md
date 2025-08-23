@@ -4,7 +4,7 @@ title: "Microsoft Azure: Fundamentals and Core Services (Part 1)"
 date: 2025-08-22
 ---
 
-# Introduction
+## Introduction
 
 Greetings and welcome to the first article in an exciting new series. In this article, we’ll be talking about Microsoft, its cloud computing platform, some technical explanations, and the development of a culture that you’ll carry with you throughout all of my future blog posts. If you know Microsoft, then you surely know the company’s cloud computing platform. I’m talking about Azure. To ensure you fully grasp the purpose of these articles, know that every explanation will be as in-depth and detailed as possible to enable complete understanding.
 
